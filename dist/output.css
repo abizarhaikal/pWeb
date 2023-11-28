@@ -700,10 +700,6 @@ video {
   margin-left: -2%;
 }
 
-.ml-\[120\%\]{
-  margin-left: 120%;
-}
-
 .ml-\[135\%\]{
   margin-left: 135%;
 }
@@ -766,6 +762,10 @@ video {
 
 .mt-\[15\%\]{
   margin-top: 15%;
+}
+
+.mt-\[20\%\]{
+  margin-top: 20%;
 }
 
 .inline{
