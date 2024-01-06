@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Posting</title>
+    <link type="text/css" rel="stylesheet" href="output.css">
+</head>
+
+<body id="top" class="bg-primary h-screen font-primaryFont">
+    <!-- Navbar -->
+    <header>
+        <nav class="relative  px-4 py-4 flex justify-between items-center bg-navbar-color h-[15vh]">
+            <div class="w-[10%] h-auto ml-10">
+                <a href="index.html"><img src="../assets/logoo-removebg-preview.png" alt="logoo" /></a>
+            </div>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-white p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-primary hover:bg-primary text-sm text-white font-bold  rounded-xl transition duration-200"
+                href="login.html">Log in</a>
+            <a class="hidden lg:inline-block py-2 px-6 bg-primary hover:bg-primary text-sm text-white  font-bold rounded-xl transition duration-200"
+                href="#">Sign up</a>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-primary border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block p-4 text-sm font-primaryFont font-semibold text-white mb-5 hover:bg-yellow-700 rounded"
+                            href="#top">Home</a>
+                        <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-300 rounded-xl"
+                            href="#">Sign in</a>
+                        <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center text-white font-semibold bg-yellow-800 hover:bg-yellow-700  rounded-xl"
+                            href="#">Sign Up</a>
+                    </div>
+                    <p class="my-4 text-xs text-center text-gray-400">
+                        <span>Copyright © 2023</span>
+                    </p>
+                </div>
+            </nav>
+    </header>
+
+    <div id="controls-carousel" class="mx-2 mw-auto relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Carousel Items -->
+            <div class="object-cover hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../assets/lot.jpg"
+                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <div class="object-cover hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="../assets/lot.jpg"
+                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <div class="object-cover hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../assets/lot.jpg"
+                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+        <div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+    </div>
+
+    <div class="border-solid flex mt-4">
+        <div class="border-double w-[70%] mx-2">
+            <!-- first article -->
+            <article class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="1">
+                <h2 class="text-3xl font-semibold font-primaryFont mb-4">Tanah Lot</h2>
+                <img src="../assets/lot.jpg" alt="post1" class="mb-4 rounded-md w-1/2">
+                <div class="mt-4">
+                    <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls. Whether
+                        it's the rustling of leaves in the wind, the chirping of birds, or the gentle flow of a river,
+                        the beauty of the natural world is unparalleled.</p>
+                    <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
+                        breathtaking cliffs, I couldn't help but feel a deep connection with the Earth. The vibrant
+                        colors, the fresh scent of the air, and the symphony of nature's sounds created a sense of
+                        tranquility and wonder.</p>
+                    <div class="flex items-center mb-2">
+                        <img src="../assets/location.ico" alt="Location Icon" class="w-5 h-5 mr-1">
+                        <p class="text-gray-600">Location: Bali, Indonesia</p> <!-- Added location with icon -->
+                    </div>
+
+
+                    <!-- Full Text Section (Initially Hidden) -->
+                    <div class="hidden mt-6" data-fulltext-id="1">
+                        <h3 class="text-2xl font-semibold font-primaryFont mb-4">Full Article</h3>
+                        <!-- Full article content here -->
+                        <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls...
+                        </p>
+                        <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
+                            breathtaking cliffs...</p>
+                    </div>
+                </div>
+
+                <!-- Comment Section (Initially Hidden) -->
+                <div class="hidden mt-6" data-comments-id="1">
+                    <h3 class="text-2xl font-semibold font-primaryFont mb-4">Comments</h3>
+                    <!-- Display comments here -->
+                    <div class="bg-gray-100 p-4 rounded-md mb-4">
+                        <h4 class="ml-1 first-letter:text-lg font-semibold font-primaryFont">Andika</h4>
+                        <span class="text-lg font-semibold font-primaryFont text-yellow-500">⭐⭐⭐⭐⭐</span>
+                        <p class="ml-1 text-gray-600 mt-2">This is a wonderful post!</p>
+
+                        <div class="like-dislike-container">
+
+                            <!-- Like Button -->
+                            <button
+                                class="ml-1 mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300 like-btn"
+                                data-article-id="1">
+                                Like
+                            </button>
+
+                            <!-- Dislike Button -->
+                            <button
+                                class="ml-1 mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-red-800 transition duration-300 dislike-btn"
+                                data-article-id="1">
+                                Dislike
+                            </button>
+                            <!-- Like Count Display -->
+                            <span id="likeCount1">0 Likes</span>
+
+                            <!-- Dislike Count Display -->
+                            <span id="dislikeCount1">0 Dislikes</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Add more comments as needed -->
+                </div>
+
+                <!-- Read Full Text Button -->
+                <button
+                    class="ml-auto mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                    onclick="toggleFullText(1)">
+                    Read Full Text
+                </button>
+
+                <!-- Toggle Comment Section Button -->
+                <button
+                    class="block mt-6 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                    onclick="toggleComments(1)">
+                    Comments
+                </button>
+            </article>
+
+            <!-- Second Article -->
+            <article class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="2">
+                <h2 class="text-3xl font-semibold font-primaryFont mb-4">Tanah Lot</h2>
+                <img src="../assets/lot.jpg" alt="post1" class="mb-4 rounded-md w-1/2">
+                <div class="mt-4">
+
+                    <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls. Whether
+                        it's the rustling of leaves in the wind, the chirping of birds, or the gentle flow of a river,
+                        the beauty of the natural world is unparalleled.</p>
+                    <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
+                        breathtaking cliffs, I couldn't help but feel a deep connection with the Earth. The vibrant
+                        colors, the fresh scent of the air, and the symphony of nature's sounds created a sense of
+                        tranquility and wonder.</p>
+                    <div class="flex items-center mb-2">
+                        <img src="../assets/location.ico" alt="Location Icon" class="w-5 h-5 mr-1">
+                        <p class="text-gray-600">Location: Bali, Indonesia</p> <!-- Added location with icon -->
+                    </div>
+
+                    <!-- Full Text Section (Initially Hidden) -->
+                    <div class="hidden mt-6" data-fulltext-id="2">
+                        <h3 class="text-2xl font-semibold font-primaryFont mb-4">Full Article</h3>
+                        <!-- Full article content here -->
+                        <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls...
+                        </p>
+                        <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
+                            breathtaking cliffs...</p>
+                    </div>
+                </div>
+
+                <!-- Comment Section (Initially Hidden) -->
+                <div class="hidden mt-6" data-comments-id="2">
+                    <h3 class="text-2xl font-semibold font-primaryFont mb-4">Comments</h3>
+                    <!-- Display comments here -->
+                    <div class="bg-gray-100 p-4 rounded-md mb-4">
+                        <h4 class="ml-1 first-letter:text-lg font-semibold font-primaryFont">Andika</h4>
+                        <span class="text-lg font-semibold font-primaryFont text-yellow-500">⭐⭐⭐⭐⭐</span>
+                        <p class="ml-1 text-gray-600 mt-2">This is a wonderful post!</p>
+                        <div class="mt-4">
+                            <div class="like-dislike-container">
+                                <!-- Like Button -->
+                                <button
+                                    class="ml-1 mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300 like-btn"
+                                    data-article-id="2">
+                                    Like
+                                </button>
+
+                                <!-- Dislike Button -->
+                                <button
+                                    class="ml-1 mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-red-800 transition duration-300 dislike-btn"
+                                    data-article-id="2">
+                                    Dislike
+                                </button>
+                                <!-- Like Count Display -->
+                                <span id="likeCount2">0 Likes</span>
+
+                                <!-- Dislike Count Display -->
+                                <span id="dislikeCount2">0 Dislikes</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Add more comments as needed -->
+                </div>
+
+                <!-- Read Full Text Button -->
+                <button
+                    class="ml-auto mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                    onclick="toggleFullText(2)">
+                    Read Full Text
+                </button>
+
+                <!-- Toggle Comment Section Button -->
+                <button
+                    class="block mt-6 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                    onclick="toggleComments(2)">
+                    Comments
+                </button>
+            </article>
+            </article>
+
+            <!-- Third Article -->
+            <article class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="3">
+
+                <h2 class="text-3xl font-semibold font-primaryFont mb-4">Tanah Lot</h2>
+                <img src="../assets/lot.jpg" alt="post1" class="mb-4 rounded-md w-1/2">
+                <div class="mt-4">
+                    <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls. Whether
+                        it's the rustling of leaves in the wind, the chirping of birds, or the gentle flow of a river,
+                        the beauty of the natural world is unparalleled.</p>
+                    <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
+                        breathtaking cliffs, I couldn't help but feel a deep connection with the Earth. The vibrant
+                        colors, the fresh scent of the air, and the symphony of nature's sounds created a sense of
+                        tranquility and wonder.</p>
+                    <div class="flex items-center mb-2">
+                        <img src="../assets/location.ico" alt="Location Icon" class="w-5 h-5 mr-1">
+                        <p class="text-gray-600">Location: Bali, Indonesia</p> <!-- Added location with icon -->
+                    </div>
+
+                    <!-- Full Text Section (Initially Hidden) -->
+                    <div class="hidden mt-6" data-fulltext-id="3">
+                        <h3 class="text-2xl font-semibold font-primaryFont mb-4">Full Article</h3>
+                        <!-- Full article content here -->
+                        <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls...
+                        </p>
+                        <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
+                            breathtaking cliffs...</p>
+                    </div>
+                </div>
+
+                <!-- Comment Section (Initially Hidden) -->
+                <div class="hidden mt-6" data-comments-id="3">
+                    <h3 class="text-2xl font-semibold font-primaryFont mb-4">Comments</h3>
+                    <!-- Display comments here -->
+                    <div class="bg-gray-100 p-4 rounded-md mb-4">
+                        <h4 class="ml-1 first-letter:text-lg font-semibold font-primaryFont">Andika</h4>
+                        <span class="text-lg font-semibold font-primaryFont text-yellow-500">⭐⭐⭐⭐⭐</span>
+                        <p class="ml-1 text-gray-600 mt-2">This is a wonderful post!</p>
+                        <div class="like-dislike-container">
+
+                            <!-- Like Button -->
+                            <button
+                                class="ml-1 mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300 like-btn"
+                                data-article-id="3">
+                                Like
+                            </button>
+
+                            <!-- Dislike Button -->
+                            <button
+                                class="ml-1 mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-red-800 transition duration-300 dislike-btn"
+                                data-article-id="3">
+                                Dislike
+                            </button>
+                            <!-- Like Count Display -->
+                            <span id="likeCount3">0 Likes</span>
+
+                            <!-- Dislike Count Display -->
+                            <span id="dislikeCount3">0 Dislikes</span>
+
+                        </div>
+                    </div>
+
+                    <!-- Add more comments as needed -->
+                </div>
+
+                <!-- Read Full Text Button -->
+                <button
+                    class="ml-auto mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                    onclick="toggleFullText(3)">
+                    Read Full Text
+                </button>
+
+                <!-- Toggle Comment Section Button -->
+                <button
+                    class="block mt-6 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                    onclick="toggleComments(3)">
+                    Comments
+                </button>
+            </article>
+            </article>
+
+        </div>
+
+
+        <!-- Recommendations Section -->
+        <div class="w-[30%] mx-2 ml-4">
+            <div class="mb-4">
+                <h2 class="text-xl font-semibold font-primaryFont text-white">Rekomendasi Lain</h2>
+            </div>
+            <!-- Individual Recommendation Card -->
+            <div class="mb-4">
+                <a href="#">
+                    <img class="w-full rounded-lg" src="../assets/lot.jpg" alt="Recommendation 1">
+                </a>
+            </div>
+            <!-- Add more recommendation cards as needed -->
+            <div class="mb-4">
+                <a href="#">
+                    <img class="w-full rounded-lg" src="../assets/lot.jpg" alt="Recommendation 2">
+                </a>
+            </div>
+            <div class="mb-4">
+                <a href="#">
+                    <img class="w-full rounded-lg" src="../assets/lot.jpg" alt="Recommendation 3">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to toggle comment section visibility -->
+    <!-- JavaScript to toggle comment section and full text visibility -->
+    <script>
+        function toggleComments(articleId) {
+            const commentsSection = document.querySelector(`[data-comments-id="${articleId}"]`);
+            commentsSection.classList.toggle('hidden');
+        }
+
+        function toggleFullText(articleId) {
+            const fullTextSection = document.querySelector(`[data-fulltext-id="${articleId}"]`);
+            fullTextSection.classList.toggle('hidden');
+        }
+
+        document.querySelectorAll('.comment-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const commentSection = this.closest('.comment-section');
+                commentSection.classList.toggle('hidden');
+            });
+        });
+
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                toggleLike(this.dataset.articleId, true);
+            });
+        });
+
+        document.querySelectorAll('.dislike-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                toggleLike(this.dataset.articleId, false);
+            });
+        });
+
+        function toggleLike(articleId, isLike) {
+            const likeCountElement = document.getElementById(`likeCount${articleId}`);
+            const dislikeCountElement = document.getElementById(`dislikeCount${articleId}`);
+
+            const currentLikes = parseInt(likeCountElement.innerText, 10);
+            const currentDislikes = parseInt(dislikeCountElement.innerText, 10);
+
+            if (isLike && currentLikes === 0) {
+                // User can like only if they haven't liked before
+                const newLikes = currentLikes + 1;
+                likeCountElement.innerText = `${newLikes} Like`;
+
+                // Remove dislike if user had disliked before
+                if (currentDislikes > 0) {
+                    dislikeCountElement.innerText = `${currentDislikes - 1} Dislikes`;
+                }
+            } else if (!isLike && currentDislikes === 0) {
+                // User can dislike only if they haven't disliked before
+                const newDislikes = currentDislikes + 1;
+                dislikeCountElement.innerText = `${newDislikes} Dislike`;
+
+                // Remove like if user had liked before
+                if (currentLikes > 0) {
+                    likeCountElement.innerText = `${currentLikes - 1} Likes`;
+                }
+            }
+        }
+
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
+<script type="module" src="script.js"></script>
+
+</html>
