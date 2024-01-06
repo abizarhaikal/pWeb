@@ -13,7 +13,7 @@
 <body id="top" class="bg-primary h-screen font-primaryFont">
     <!-- Navbar -->
     <header>
-        <nav class="relative  px-4 py-4 flex justify-between items-center bg-navbar-color h-[15vh]">
+        <nav class="px-4 py-4 flex justify-between items-center bg-navbar-color h-[15vh]">
             <div class="w-[10%] h-auto ml-10">
                 <a href="index.html"><img src="../assets/logoo-removebg-preview.png" alt="logoo" /></a>
             </div>
@@ -25,9 +25,9 @@
                     </svg>
                 </button>
             </div>
-            <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-primary hover:bg-primary text-sm text-white font-bold  rounded-xl transition duration-200"
+            <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-primary hover:bg-yellow-600 text-sm text-white font-bold  rounded-xl transition duration-200"
                 href="login.html" target="_blank">Log in</a>
-            <a class="hidden lg:inline-block py-2 px-6 bg-primary hover:bg-primary text-sm text-white  font-bold rounded-xl transition duration-200"
+            <a class="hidden lg:inline-block py-2 px-6 bg-primary hover:bg-yellow-600 text-sm text-white  font-bold rounded-xl transition duration-200"
                 href="signup.html" target="_blank">Sign up</a>
         </nav>
         <div class="navbar-menu relative z-50 hidden">
@@ -62,7 +62,7 @@
             </nav>
     </header>
 
-    <div id="controls-carousel" class="mx-2 mw-auto relative" data-carousel="static">
+    <div id="controls-carousel" class="mx-2 mw-auto relative z-0" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <!-- Carousel Items -->
@@ -112,19 +112,21 @@
     </div>
 
     <div class="border-solid flex mt-4">
-        <div class="border-double w-[70%] mx-2">
+        <div class="border-double w-[70%] mx-2 ">
             <!-- first article -->
-            <article class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="1">
-                <h2 class="text-3xl font-semibold font-primaryFont mb-4">Tanah Lot</h2>
-                <img src="../assets/lot.jpg" alt="post1" class="mb-4 rounded-md w-1/2">
+            <article id="article1" class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="1">
+                <h2 class="text-3xl font-semibold font-primaryFont mb-4">Nusa Penida</h2>
+                <div class="">
+                    <img src="../assets/NusaPenida.jpeg" alt="post1" class="mb-4 rounded-md w-96 h-64">
+                </div>
+                
+
                 <div class="mt-4">
-                    <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls. Whether
-                        it's the rustling of leaves in the wind, the chirping of birds, or the gentle flow of a river,
-                        the beauty of the natural world is unparalleled.</p>
-                    <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
-                        breathtaking cliffs, I couldn't help but feel a deep connection with the Earth. The vibrant
-                        colors, the fresh scent of the air, and the symphony of nature's sounds created a sense of
-                        tranquility and wonder.</p>
+                    <p class="text-gray-800">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem sit
+                        debitis doloremque a laborum eaque quo eos, id quam commodi!</p>
+                    <p class="text-gray-800 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                        laboriosam, sit nisi rerum ab distinctio perspiciatis? Culpa, iusto nulla minus ad veritatis
+                        enim quod perferendis. Quae laboriosam at distinctio tenetur.</p>
                     <div class="flex items-center mb-2">
                         <img src="../assets/location.ico" alt="Location Icon" class="w-5 h-5 mr-1 mt-5">
                         <p class="text-gray- mt-5">Location: Bali, Indonesia</p> <!-- Added location with icon -->
@@ -180,37 +182,34 @@
                     <!-- Add more comments as needed -->
                 </div>
 
-                <!-- Read Full Text Button -->
-                <button
-                    class="ml-auto mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
-                    onclick="toggleFullText(1)">
-                    Read Full Text
-                </button>
+                <div class="flex flex-row justify-start">
+                    <!-- Read Full Text Button -->
+                    <button
+                        class="mr-4 mt-6 bg-primary text-white py-2 px-2 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                        onclick="toggleFullText(1)">
+                        Read Full Text
+                    </button>
 
-                <!-- Toggle Comment Section Button -->
-                <button
-                    class="block mt-6 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
-                    onclick="toggleComments(1)">
-                    Comments
-                </button>
+                    <!-- Toggle Comment Section Button -->
+                    <button
+                        class="mt-6 bg-primary text-white py-2 px-2 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                        onclick="toggleComments(1)">
+                        Comments
+                    </button>
+                </div>
             </article>
 
             <!-- Second Article -->
-            <article class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="2">
-                <h2 class="text-3xl font-semibold font-primaryFont mb-4">Tanah Lot</h2>
-                <img src="../assets/lot.jpg" alt="post1" class="mb-4 rounded-md w-1/2">
-                <div class="mt-4">
+            <article id="article2" class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="2">
+                <h2 class="text-3xl font-semibold font-primaryFont mb-4">Gunung Batur</h2>
+                <img src="https://i.pinimg.com/736x/1f/8f/2d/1f8f2d50933c9eede25e01e8c88789ad.jpg" alt="post2" class="mb-4 rounded-md w-96 h-64">
+                <div class="mt-4 mb">
 
-                    <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls. Whether
-                        it's the rustling of leaves in the wind, the chirping of birds, or the gentle flow of a river,
-                        the beauty of the natural world is unparalleled.</p>
-                    <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
-                        breathtaking cliffs, I couldn't help but feel a deep connection with the Earth. The vibrant
-                        colors, the fresh scent of the air, and the symphony of nature's sounds created a sense of
-                        tranquility and wonder.</p>
+                    <p class="text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, fuga.</p>
+                    <p class="text-gray-800 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam deleniti cum sunt ipsam, assumenda eaque fugit perferendis aperiam laudantium?</p>
                     <div class="flex items-center mb-2">
-                        <img src="../assets/location.ico" alt="Location Icon" class="w-5 h-5 mr-1">
-                        <p class="text-gray-600">Location: Bali, Indonesia</p> <!-- Added location with icon -->
+                        <img src="../assets/location.ico" alt="Location Icon" class="w-5 h-5 mr-1 mt-5">
+                        <p class="text-gray- mt-5">Location: Bali, Indonesia</p> <!-- Added location with icon -->
                     </div>
 
                     <!-- Full Text Section (Initially Hidden) -->
@@ -261,40 +260,36 @@
                     <!-- Add more comments as needed -->
                 </div>
 
-                <!-- Read Full Text Button -->
-                <button
-                    class="ml-auto mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
-                    onclick="toggleFullText(2)">
-                    Read Full Text
-                </button>
+                <div class="flex flex-row justify-start">
+                    <!-- Read Full Text Button -->
+                    <button
+                        class="mr-4 mt-6 bg-primary text-white py-2 px-2 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                        onclick="toggleFullText(2)">
+                        Read Full Text
+                    </button>
 
-                <!-- Toggle Comment Section Button -->
-                <button
-                    class="block mt-6 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
-                    onclick="toggleComments(2)">
-                    Comments
-                </button>
+                    <!-- Toggle Comment Section Button -->
+                    <button
+                        class="mt-6 bg-primary text-white py-2 px-2 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                        onclick="toggleComments(2)">
+                        Comments
+                    </button>
+                </div>
             </article>
             </article>
 
             <!-- Third Article -->
-            <article class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="3">
+            <article id="article3" class="mb-4 bg-white rounded-lg p-6 shadow-md font-primaryFont" data-article-id="3">
 
                 <h2 class="text-3xl font-semibold font-primaryFont mb-4">Tanah Lot</h2>
-                <img src="../assets/lot.jpg" alt="post1" class="mb-4 rounded-md w-1/2">
+                <img src="../assets/lot.jpg" alt="post3" class="mb-4 rounded-md w-96 h-64">
                 <div class="mt-4">
-                    <p class="text-gray-800">Nature has a way of captivating our hearts and soothing our souls. Whether
-                        it's the rustling of leaves in the wind, the chirping of birds, or the gentle flow of a river,
-                        the beauty of the natural world is unparalleled.</p>
-                    <p class="text-gray-800 mt-4">As I explored the lush green forests and stood on the edge of
-                        breathtaking cliffs, I couldn't help but feel a deep connection with the Earth. The vibrant
-                        colors, the fresh scent of the air, and the symphony of nature's sounds created a sense of
-                        tranquility and wonder.</p>
+                    <p class="text-gray-800">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, officia!</p>
+                    <p class="text-gray-800 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia necessitatibus ex ratione optio repellat. Similique eveniet est odio sequi hic!</p>
                     <div class="flex items-center mb-2">
-                        <img src="../assets/location.ico" alt="Location Icon" class="w-5 h-5 mr-1">
-                        <p class="text-gray-600">Location: Bali, Indonesia</p> <!-- Added location with icon -->
+                        <img src="../assets/location.ico" alt="Location Icon" class="w-5 h-5 mr-1 mt-5">
+                        <p class="text-gray- mt-5">Location: Bali, Indonesia</p> <!-- Added location with icon -->
                     </div>
-
                     <!-- Full Text Section (Initially Hidden) -->
                     <div class="hidden mt-6" data-fulltext-id="3">
                         <h3 class="text-2xl font-semibold font-primaryFont mb-4">Full Article</h3>
@@ -341,19 +336,21 @@
                     <!-- Add more comments as needed -->
                 </div>
 
-                <!-- Read Full Text Button -->
-                <button
-                    class="ml-auto mt-4 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
-                    onclick="toggleFullText(3)">
-                    Read Full Text
-                </button>
+                <div class="flex flex-row justify-start">
+                    <!-- Read Full Text Button -->
+                    <button
+                        class="mr-4 mt-6 bg-primary text-white py-2 px-2 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                        onclick="toggleFullText(3)">
+                        Read Full Text
+                    </button>
 
-                <!-- Toggle Comment Section Button -->
-                <button
-                    class="block mt-6 bg-primary text-white py-2 px-4 rounded-md text-center hover:bg-blue-800 transition duration-300"
-                    onclick="toggleComments(3)">
-                    Comments
-                </button>
+                    <!-- Toggle Comment Section Button -->
+                    <button
+                        class="mt-6 bg-primary text-white py-2 px-2 rounded-md text-center hover:bg-blue-800 transition duration-300"
+                        onclick="toggleComments(3)">
+                        Comments
+                    </button>
+                </div>
             </article>
             </article>
 
@@ -367,19 +364,23 @@
             </div>
             <!-- Individual Recommendation Card -->
             <div class="mb-4">
-                <a href="#">
-                    <img class="w-full rounded-lg" src="../assets/NusaPenida.jpeg" alt="Recommendation 1" style="width: 100%; height: 300px;" >
+                <a href="#article1">
+                    <img class="w-full rounded-lg" src="../assets/NusaPenida.jpeg" alt="Recommendation 1"
+                        style="width: 100%; height: 300px;">
                 </a>
             </div>
             <!-- Add more recommendation cards as needed -->
             <div class="mb-4">
-                <a href="#">
-                    <img class="w-full rounded-lg" src="https://i.pinimg.com/736x/1f/8f/2d/1f8f2d50933c9eede25e01e8c88789ad.jpg" alt="Recommendation 2" style="width: 100%; height: 300px;">
+                <a href="#article2">
+                    <img class="w-full rounded-lg"
+                        src="https://i.pinimg.com/736x/1f/8f/2d/1f8f2d50933c9eede25e01e8c88789ad.jpg"
+                        alt="Recommendation 2" style="width: 100%; height: 300px;">
                 </a>
             </div>
             <div class="mb-4">
-                <a href="#">
-                    <img class="w-full rounded-lg" src="../assets/lot.jpg" alt="Recommendation 3" style="width: 100%; height: 300px;">
+                <a href="#article3">
+                    <img class="w-full rounded-lg" src="../assets/lot.jpg" alt="Recommendation 3"
+                        style="width: 100%; height: 300px;">
                 </a>
             </div>
         </div>
@@ -485,6 +486,7 @@
                 }
             }
         });
+        
     </script>
 
 
