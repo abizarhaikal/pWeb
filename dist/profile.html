@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Profile</title>
+    <link type="text/css" rel="stylesheet" href="output.css">
+</head>
+
+<body id="top" class="bg-primary h-screen font-primaryFont">
+    <div class="bg-primary font-primaryFont">
+        <header>
+            <nav class="px-4 py-4 flex justify-between items-center bg-navbar-color h-[15vh]">
+                <div class="w-[10%] h-auto ml-10">
+                    <a href="explore.html"><img src="../assets/logoo-removebg-preview.png" alt="logoo" /></a>
+                </div>
+                <div class="flex justify-between gap-5">
+                    <ul class="flex gap-8 justify-end pr-5 text-3xl"></ul>
+                </div>
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-white p-3">
+                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+
+                <a class="hidden lg:inline-block py-2 px-6 bg-primary hover:bg-yellow-600 text-sm text-white font-bold rounded-xl transition duration-200"
+                    href="#">
+                    <div class="flex items-center justify-between">
+                        <!-- Tambahkan justify-between untuk menyusun elemen secara horizontal -->
+                        <span>Steven</span> <!-- Nama yang akan ditampilkan -->
+                        <img class="w-10 h-10 rounded-full ml-2" src="../assets/profilepicture.png"
+                            alt="Rounded avatar">
+                        <!-- Ubah margin-left menjadi ml-2 (margin-left: 2) -->
+                    </div>
+                </a>
+
+            </nav>
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav
+                    class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-primary border-r overflow-y-auto">
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        </a>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="">
+                        <div class="pt-2">
+                            <!-- Profile -->
+                            <a class="block p-4 text-sm font-primaryFont font-semibold text-white mb-5 hover:bg-yellow-700 rounded"
+                                href="#">
+                                <div class="flex items-center">
+                                    <img class="w-10 h-10 rounded-full ml-0 mr-3" src="../assets/profilepicture.png"
+                                        alt="Rounded avatar">
+                                    <span>Steven</span> <!-- Nama yang akan ditampilkan -->
+                                </div>
+                            </a>
+                            <a class="block p-4 text-sm font-primaryFont font-semibold text-white mb-5 hover:bg-yellow-700 rounded"
+                                href="#top">Home</a>
+                        </div>
+                        <p class="my-4 text-xs text-center text-gray-400">
+                            <span>Copyright © 2023</span>
+                        </p>
+                    </div>
+                </nav>
+        </header>
+        <div class="text-white grid grid-cols-3 gap-4 p-4">
+            <div class="col-span-1">
+                <div class="flex flex-col items-center space-y-4">
+                    <span class="relative flex h-32 w-32 shrink-0 overflow-hidden rounded-full">
+                        <img class="aspect-square h-full w-full" alt="Fanza Gede" src="../assets/profilepicture.png">
+                        <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">FG</span>
+                    </span>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">+</button>
+                </div>
+
+                <h2 class="mt-4 text-xl font-bold">I Fanza Gede</h2>
+                <p class="text-sm">Seniman</p>
+                <p class="text-sm">Bali - 19 September 1967</p>
+                <h3 class="mt-4 mb-2 font-semibold">About:</h3>
+                <p class="text-sm">
+                    Saya seorang seniman berbakat yang berdedikasi untuk mengungkapkan keindahan nyata melalui berbagai
+                    media seni. Dilahirkan dengan cita unggulnya yang menciptakan hubungan antara dunia alam dan
+                    imajinasi, karya seni saya lmenangkap memikat pemirsa dengan keindahan, pasan yang dalam, dan
+                    sentuhan emosi yang kuat.
+                </p>
+            </div>
+            <div class="col-span-2">
+                <div class="relative filter grayscale hover:grayscale-0">
+                    <img src="/assets/aboutbali.png" alt="Bali Scenery" class="w-full h-auto" width="600" height="300"
+                        style="aspect-ratio: 600 / 300; object-fit: cover;">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <h2 class="text-white text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">NYI.AJAH</h2>
+                    </div>
+                </div>
+                
+                <div class="font font-primaryFont mt-2 text-xl">
+                    <h1>Favorite</h1>
+                </div>
+                <div class="mt-4 grid grid-cols-3 gap-4">
+                    <img src="/assets/kelingking.png" alt="Artwork 1" class="w-full h-auto rounded-lg" width="100"
+                        height="100" style="aspect-ratio: 100 / 100; object-fit: cover;">
+                    <img src="/assets/gunungbatur.png" alt="Artwork 2" class="w-full h-auto rounded-lg" width="100"
+                        height="100" style="aspect-ratio: 100 / 100; object-fit: cover;">
+                    <img src="/assets/gunungkawi.png" alt="Artwork 3" class="w-full h-auto rounded-lg" width="100"
+                        height="100" style="aspect-ratio: 100 / 100; object-fit: cover;">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="text-white p-4">
+            <h3 class="text-xl font-semibold">Reviews:</h3>
+            <div class="mt-4 grid grid-cols-2 gap-4">
+                <div class="col-span-1">
+                    <p class="font-semibold">Ubud, Surga Budaya dan Alam di Bali</p>
+                    <p class="text-sm">
+                        Ubud adalah sebuah destinasi wisata yang mendunia, terletak di tengah pulau Bali, Indonesia.
+                        Kota ini dikenalwarisan ngalami yang beraneka-ragam unik, mengagungkan keindahan alam, kekayaan
+                        budaya, seni, dan keramahan penduduk setempat. Ubud adalah tempat yang sempurna untuk mereka
+                        yang mencari ketenangan jauh sempurna antara relaksasi, petualangan, dan pencarian kedamaian.
+                    </p>
+                </div>
+                <div class="col-span-1">
+                    <div class="flex items-center space-x-2"><span
+                            class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"><img
+                                class="aspect-square h-full w-full" alt="Regina Milles"
+                                src="/assets/profilepicture.png"><span
+                                class="flex h-full w-full items-center justify-center rounded-full bg-muted">RM</span></span>
+                        <div>
+                            <p class="font-semibold">Regina Milles</p>
+                            <p class="text-sm">5 stars</p>
+                        </div>
+                    </div>
+                    <p class="mt-2 text-sm">
+                        This proved to be impossible using the traditional concept of space and time. Einstein developed
+                        a new view of time using the idea that the speed of light is absolute. Einstein developed a new
+                        view of time and then space.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-white flex justify-center items-center p-4 bg-yellow-700"><button
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2">Send
+                a message to I Fanza Gede</button></div>
+    </div>
+
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+
+    </script>
+
+
+</body>
+
+
+<script type="module" src="script.js"></script>
+
+</html>

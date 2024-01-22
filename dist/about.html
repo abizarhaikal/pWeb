@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About</title>
+    <link type="text/css" rel="stylesheet" href="output.css">
+</head>
+
+<body id="top" class="bg-primary h-screen font-primaryFont">
+    <!-- Navbar -->
+    <header>
+        <nav class="px-4 py-4 flex justify-between items-center bg-navbar-color h-[15vh]">
+            <div class="w-[10%] h-auto ml-10">
+                <a href="explore.html"><img src="../assets/logoo-removebg-preview.png" alt="logoo" /></a>
+            </div>
+            <div class="flex justify-between gap-5">
+                <ul class="flex gap-8 justify-end pr-5 text-3xl"></ul>
+            </div>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-white p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <a class="hidden lg:inline-block py-2 px-6 bg-primary hover:bg-yellow-600 text-sm text-white font-bold rounded-xl transition duration-200"
+                href="" target="_blank">
+                <div class="flex items-center justify-between">
+                    <span>Steven</span>
+                    <img class="w-10 h-10 rounded-full ml-2" src="../assets/profilepicture.png" alt="Rounded avatar">
+                </div>
+            </a>
+        </nav>
+
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-primary border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="">
+                    <div class="pt-2">
+                        <!-- Profile -->
+                        <a class="block p-4 text-sm font-primaryFont font-semibold text-white mb-5 hover:bg-yellow-700 rounded"
+                            href="" target="_blank">
+                            <div class="flex items-center">
+                                <img class="w-10 h-10 rounded-full ml-0 mr-3" src="../assets/profilepicture.png"
+                                    alt="Rounded avatar">
+                                <span>Steven</span>
+                            </div>
+                        </a>
+                        <a class="block p-4 text-sm font-primaryFont font-semibold text-white mb-5 hover:bg-yellow-700 rounded"
+                            href="#top">Home</a>
+                    </div>
+                    <p class="my-4 text-xs text-center text-gray-400">
+                        <span>Copyright © 2023</span>
+                    </p>
+                </div>
+            </nav>
+    </header>
+
+
+    <div class="bg-primary text-white">
+        <div class="bg-primary font font-primaryFont text-white py-6 px-4 text-center">
+            <h1 class="text-3xl font-bold">NYI.AJAH</h1>
+        </div>
+        <div class="p-4">
+            <img src="/assets/aboutbali.png" alt="Bali landscape" class="w-[70%] md:max-h-screen mx-auto rounded-xl"
+                style="object-fit: cover;">
+            <p class="mt-4 text-sm text-center">
+                Selamat datang di Nylajah, portal wisata terkini yang akan membawa Anda menelusuri keindahan dan
+                keunikan destinasi wisata di Bali. Kami bangga menjadi teman setia perjalanan Anda, memberikan informasi
+                lengkap tentang tempat-tempat menarik, cerita perjalanan, dan pengalaman berharga di Kawasan Bali
+            </p>
+            <div class="mt-6">
+                <h2 class="text-xl text-center font-semibold">Our Vision</h2>
+                <hr class="mx-auto my-2 w-16 border-t-2 border-white">
+                <p class="mt-2 text-sm text-center">
+                    Visi kami adalah menjadi sumber utama rekomendasi wisata di Bali yang menginspirasi dan memudahkan
+                    para wisatawan dalam merencanakan perjalanan mereka. Kami percaya bahwa setiap sudut Bali memiliki
+                    cerita uniknya sendiri, dan kami berkomitmen untuk membagikan keindahan dan keberagaman pulau ini
+                    kepada seluruh dunia
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold text-center">Our Mission</h2>
+            <hr class="mx-auto my-2 w-16 border-t-2 border-white">
+            <div class="justify-items-center mt-2 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="text-center">
+                    <h3 class="font-primaryFont">Memberikan Informasi Akurat</h3>
+                    <img src="/assets/1431931.jpg" alt="misi1" class="h-48 w-full md:w-96" />
+                </div>
+                <div class="text-center">
+                    <h3 class="font-primaryFont">Menghubungkan wisatawan</h3>
+                    <img src="/assets/1937832.jpg" alt="misi2" class="h-48 w-full md:w-96" />
+                </div>
+                <div class="text-center">
+                    <h3 class="font-primaryFont">Memotivasi Perjalanan</h3>
+                    <img src="/assets/537876 (1).jpg" alt="misi3" class="h-48 w-full md:w-96" />
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold text-center">Our Feature</h2>
+            <hr class="mx-auto my-2 w-16 border-t-2 border-white">
+            <div class="justify-items-center mt-2 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="text-center">
+                    <h3 class="font-primaryFont">Lokasi Wisata</h3>
+                </div>
+                <div class="text-center">
+                    <h3 class="font-primaryFont">Melihat Review</h3>
+                </div>
+                <div class="text-center">
+                    <h3 class="font-primaryFont">Terlengkap</h3>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center mt-10 text-sm bg-yellow-700">
+            Terima kasih telah memilih Nylajah sebagai teman perjalanan Anda. Kami menyediakan berbagai fitur
+            untuk memudahkan perjalanan di Bali!
+        </p>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+
+    </script>
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
